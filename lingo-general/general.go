@@ -818,7 +818,10 @@ type SetAvailableCurrent struct {
 	CurrentLimit uint16
 }
 type RequestApplicationLaunch struct {
-	_     [3]byte
+	TransID uint16
+	Reserved0 byte
+	Reserved1 byte
+	Reserved2 byte
 	AppID []byte
 }
 type GetNowPlayingFocusApp struct{}
