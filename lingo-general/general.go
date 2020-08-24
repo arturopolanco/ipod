@@ -100,6 +100,7 @@ const (
 	ACKStatusSuccess  ACKStatus = 0x00
 	ACKStatusUnkownID ACKStatus = 0x05
 	ACKStatusPending  ACKStatus = 0x06
+	ACKStatusFailed ACKStatus = 0x02
 )
 
 type ACK struct {
