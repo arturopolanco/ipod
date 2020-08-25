@@ -107,7 +107,7 @@ func HandleDispRemote(req *ipod.Command, tr ipod.CommandWriter, dev DeviceDispRe
 
 	case *GetPlayStatus:
 		ipod.Respond(req, tr, &RetPlayStatus{
-			PlayState: 0, //stopped
+			PlayState: 1, //stopped
 		})
 
 	case *SetCurrentPlayingTrack:
